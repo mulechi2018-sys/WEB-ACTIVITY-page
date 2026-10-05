@@ -1,0 +1,224 @@
+/* GENERAL PAGE STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+
+/* HEADER */
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #dfeaf3;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+}
+
+nav a {
+    display: inline-block;
+    margin: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* MAIN CONTENT */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* REPEATED SECTION CLASS */
+
+.content-section {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: white;
+}
+
+
+/* UNIQUE ID SELECTOR */
+
+#hobbies {
+    background-color: #f1f6fa;
+}
+
+
+/* HEADINGS */
+
+h2 {
+    margin-top: 0;
+}
+
+h3 {
+    margin-top: 25px;
+}
+
+
+/* PHOTO GALLERY */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery figure {
+    margin: 0;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    padding: 8px;
+    text-align: center;
+}
+
+
+/* VIDEO */
+
+video {
+    width:400px
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* AUDIO */
+
+audio {
+    max-width: 100%;
+}
+
+
+/* TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+caption {
+    font-weight: bold;
+    padding: 10px;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #555;
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+}
+
+
+/* FORM */
+
+form {
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+
+/* SUBMIT BUTTON */
+
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+/* MOBILE SCREEN */
+
+@media (max-width: 700px) {
+
+    main {
+        width: 95%;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+
+    .content-section {
+        padding: 15px;
+    }
+
+}
