@@ -7,38 +7,84 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>My Personal Website</title>
+    <title>Muleya Chibwe - Personal Website</title>
 
+    <!-- External CSS -->
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
     <!-- HEADER -->
     <header>
+
         <h1>Welcome to My Personal Website</h1>
+
         <p>My journey as a student</p>
+
+        <p>
+            My name is Muleya Chibwe, a student at Mulungushi University
+            studying Mathematics and Information Communication Technology.
+        </p>
+
+        <!-- Theme Switch -->
+        <button id="themeButton" type="button">
+            Switch Theme
+        </button>
+
     </header>
 
 
     <!-- NAVIGATION -->
     <nav>
+
         <a href="#about">About Me</a>
+
         <a href="#hobbies">My Hobbies</a>
+
         <a href="#learning">My Learning Plan</a>
+
+        <a href="#projects">Projects & Skills</a>
+
         <a href="#photos">My Photos</a>
+
         <a href="#media">My Media</a>
+
         <a href="#contact">Contact</a>
 
         <a href="https://developer.mozilla.org/en-US/docs/Learn"
-           target="_blank">
+           target="_blank"
+           rel="noopener">
             Learn Web Development
         </a>
+
     </nav>
 
 
     <!-- MAIN CONTENT -->
     <main>
+
+
+        <!-- INTRODUCTION -->
+        <section class="intro-section">
+
+            <h2>My Student Portfolio</h2>
+
+            <p>
+                Welcome to my personal student portfolio. This website
+                shows my learning journey, hobbies, skills and practical
+                work in web technologies.
+            </p>
+
+            <a class="project-button" href="#projects">
+                View My Projects
+            </a>
+
+        </section>
+
 
         <!-- ABOUT ME -->
         <section id="about" class="content-section">
@@ -46,7 +92,7 @@
             <h2>About Me</h2>
 
             <p>
-                My name is MULEYA CHIBWE. I am a student at Mulungushi
+                My name is Muleya Chibwe. I am a student at Mulungushi
                 University studying Mathematics and Information
                 Communication Technology. I am interested in computers,
                 mathematics and web development. I enjoy learning new
@@ -54,6 +100,8 @@
                 practical activities. My goal is to become better at
                 programming and web development so that I can create
                 useful websites and solve problems using technology.
+                Through my studies, I am developing both theoretical
+                knowledge and practical computer skills.
             </p>
 
         </section>
@@ -65,9 +113,13 @@
             <h2>My Hobbies</h2>
 
             <ul>
+
                 <li>Listening to music</li>
+
                 <li>Playing football</li>
+
                 <li>Learning computer skills</li>
+
             </ul>
 
         </section>
@@ -84,7 +136,10 @@
             </p>
 
             <ol>
-                <li>Study HTML and practise creating webpages.</li>
+
+                <li>
+                    Study HTML and practise creating webpages.
+                </li>
 
                 <li>
                     Study CSS and practise styling webpages.
@@ -98,6 +153,7 @@
                 <li>
                     Build small websites to improve my practical skills.
                 </li>
+
             </ol>
 
 
@@ -110,31 +166,142 @@
                     Weekly Web Development Practice Plan
                 </caption>
 
-                <tr>
-                    <th>Day</th>
-                    <th>Topic</th>
-                    <th>Practice Task</th>
-                </tr>
+                <thead>
 
-                <tr>
-                    <td>Monday</td>
-                    <td>HTML</td>
-                    <td>Practise HTML elements</td>
-                </tr>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Practice Task</th>
+                    </tr>
 
-                <tr>
-                    <td>Wednesday</td>
-                    <td>CSS</td>
-                    <td>Practise styling webpages</td>
-                </tr>
+                </thead>
 
-                <tr>
-                    <td>Friday</td>
-                    <td>Web Design</td>
-                    <td>Build and test a webpage</td>
-                </tr>
+                <tbody>
+
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML</td>
+                        <td>Practise HTML elements</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>CSS</td>
+                        <td>Practise styling webpages</td>
+                    </tr>
+
+                    <tr>
+                        <td>Friday</td>
+                        <td>Web Design</td>
+                        <td>Build and test a webpage</td>
+                    </tr>
+
+                </tbody>
 
             </table>
+
+        </section>
+
+
+        <!-- PROJECTS AND SKILLS -->
+        <section id="projects" class="content-section">
+
+            <h2>Projects and Skills</h2>
+
+            <p>
+                These are some of the skills and practical activities
+                I have learned through my studies.
+            </p>
+
+
+            <!-- Project 1 -->
+            <article class="project-card">
+
+                <h3>HTML Webpage Development</h3>
+
+                <p>
+                    I have learned how to create webpages using HTML5,
+                    including headings, paragraphs, lists, tables,
+                    images, links and forms.
+                </p>
+
+                <button class="detailsButton" type="button">
+                    Show Details
+                </button>
+
+                <p class="project-details hidden">
+                    This skill helped me understand the structure of
+                    webpages and how different HTML elements work together.
+                </p>
+
+            </article>
+
+
+            <!-- Project 2 -->
+            <article class="project-card">
+
+                <h3>CSS Web Design</h3>
+
+                <p>
+                    I have learned how to use CSS to improve the
+                    appearance and layout of webpages.
+                </p>
+
+                <button class="detailsButton" type="button">
+                    Show Details
+                </button>
+
+                <p class="project-details hidden">
+                    I have practised colours, fonts, margins, padding,
+                    borders, layouts and responsive design.
+                </p>
+
+            </article>
+
+ 
+            <!-- Project 3 -->
+            <article class="project-card">
+
+                <h3>JavaScript Interaction</h3>
+
+                <p>
+                    I am learning how JavaScript can make webpages
+                    interactive and respond to user actions.
+                </p>
+
+                <button class="detailsButton" type="button">
+                    Show Details
+                </button>
+
+                <p class="project-details ">
+                    I am practising events, functions, variables,
+                    DOM updates and form validation.
+                </p>
+
+            </article>
+
+
+            <!-- Project Search -->
+            <div class="project-search">
+
+                <h3>Search My Skills</h3>
+
+                <label for="projectSearch">
+                    Search projects or skills:
+                </label>
+
+                <input type="search"
+                       id="projectSearch"
+                       placeholder="Type HTML, CSS or JavaScript">
+
+                <button id="resetSearch"
+                        type="button">
+                    Reset
+                </button>
+
+                <p id="searchMessage"></p>
+
+            </div>
 
         </section>
 
@@ -144,6 +311,37 @@
 
             <h2>My Photos</h2>
 
+
+            <!-- Gallery Viewer -->
+            <div class="gallery-viewer">
+
+                <img id="galleryImage"
+                     src="images/photo1.jpg"
+                     alt="Photo showing my learning environment">
+
+                <p id="galleryCaption">
+                    My learning environment.
+                </p>
+
+
+                <div class="gallery-buttons">
+
+                    <button id="previousButton"
+                            type="button">
+                        Previous
+                    </button>
+
+                    <button id="nextButton"
+                            type="button">
+                        Next
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Original Gallery -->
             <div class="gallery">
 
                 <figure>
@@ -235,7 +433,12 @@
 
             <h2>Contact Me</h2>
 
-            <form action="#">
+            <p>
+                Browser demonstration only — no message is sent.
+            </p>
+
+
+            <form id="contactForm">
 
                 <label for="name">
                     Name:
@@ -276,15 +479,26 @@
 
 
                 <button type="submit">
-                    Submit
+                    
+                    validate and preview
+            
                 </button>
-
+  
             </form>
 
-            <p>
-                This form is for demonstration only and does not
-                send data.
-            </p>
+
+            <!-- JavaScript feedback -->
+            <div id="formFeedback"
+                 class="form-feedback"
+                 aria-live="polite">
+            </div>
+
+
+            <!-- Preview -->
+            <div id="formPreview"
+                 class="form-preview"
+                 aria-live="polite">
+            </div>
 
         </section>
 
@@ -295,14 +509,22 @@
     <footer>
 
         <p>
-            &copy; 2026 My Personal Website
+            &copy; 2026 Muleya Chibwe - ICT251 Web Technologies
         </p>
 
         <p>
             Created for ICT251 Web Technologies.
         </p>
 
-    </footer >
+        <p>
+            <a href="https://github.com/mulechi2018-sys/WEB-ACTIVITY-page"
+               target="_blank"
+               rel="noopener">
+                View Source on GitHub
+            </a>
+        </p>
+
+    </footer>
 
 </body>
 

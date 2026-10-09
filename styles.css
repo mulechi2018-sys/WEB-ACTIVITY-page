@@ -1,224 +1,670 @@
-/* GENERAL PAGE STYLING */
+/* =========================================================
+ICT251 WEB TECHNOLOGIES - ACTIVITY 3
+Interactive Personal Website
+Author: Muleya Chibwe
+========================================================= */
+
+/* =========================================================
+
+1. GENERAL PAGE STYLING
+   ========================================================= */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #222;
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+line-height: 1.6;
+background-color: #f4f7fb;
+color: #222;
 }
 
-
-/* HEADER */
+/* =========================================================
+2. HEADER
+========================================================= */
 
 header {
-    text-align: center;
-    padding: 30px;
-    background-color: #dfeaf3;
+background-color: #17365d;
+color: white;
+text-align: center;
+padding: 50px 20px;
 }
 
 header h1 {
-    margin-bottom: 10px;
+margin: 0 0 10px;
+font-size: 2.4rem;
 }
 
+header p {
+margin: 8px auto;
+max-width: 800px;
+}
 
-/* NAVIGATION */
+/* Theme button */
+
+#themeButton {
+margin-top: 20px;
+padding: 10px 18px;
+border: 2px solid white;
+border-radius: 6px;
+background-color: transparent;
+color: white;
+cursor: pointer;
+font-weight: bold;
+}
+
+/* =========================================================
+3. NAVIGATION
+========================================================= */
 
 nav {
-    text-align: center;
-    padding: 15px;
-    background-color: #333;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 8px;
+padding: 15px;
+background-color: #0f2742;
 }
 
 nav a {
-    display: inline-block;
-    margin: 5px 10px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+color: white;
+text-decoration: none;
+padding: 10px 14px;
+border-radius: 5px;
 }
 
 nav a:hover {
-    text-decoration: underline;
+background-color: #2f75b5;
 }
 
+nav a:focus {
+outline: 3px solid #ffd966;
+outline-offset: 2px;
+}
 
-/* MAIN CONTENT */
+/* =========================================================
+4. MAIN CONTENT
+========================================================= */
 
 main {
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
+width: min(1100px, 92%);
+margin: 0 auto;
 }
 
+/* =========================================================
+5. INTRODUCTION SECTION
+========================================================= */
 
-/* REPEATED SECTION CLASS */
+.intro-section {
+margin: 30px 0;
+padding: 45px 25px;
+text-align: center;
+background-color: white;
+border: 1px solid #d9e2ec;
+border-radius: 12px;
+}
+
+.intro-section h2 {
+margin-top: 0;
+font-size: 2rem;
+}
+
+/* Project button */
+
+.project-button {
+display: inline-block;
+margin-top: 15px;
+padding: 12px 20px;
+background-color: #2f75b5;
+color: white;
+text-decoration: none;
+border-radius: 6px;
+font-weight: bold;
+}
+
+.project-button:hover {
+background-color: #1f4e79;
+}
+
+.project-button:focus {
+outline: 3px solid #ffd966;
+outline-offset: 3px;
+}
+
+/* =========================================================
+6. CONTENT SECTIONS
+========================================================= */
 
 .content-section {
-    padding: 20px;
-    margin: 20px 0;
-    border: 1px solid #555;
-    border-radius: 8px;
-    background-color: white;
+margin: 30px 0;
+padding: 30px;
+background-color: white;
+border: 1px solid #d9e2ec;
+border-radius: 12px;
 }
 
-
-/* UNIQUE ID SELECTOR */
-
-#hobbies {
-    background-color: #f1f6fa;
+.content-section h2 {
+margin-top: 0;
+color: #17365d;
+border-bottom: 3px solid #2f75b5;
+padding-bottom: 8px;
 }
 
-
-/* HEADINGS */
-
-h2 {
-    margin-top: 0;
+.content-section h3 {
+color: #1f4e79;
 }
 
-h3 {
-    margin-top: 25px;
+/* =========================================================
+7. LISTS
+========================================================= */
+
+.content-section ul,
+.content-section ol {
+padding-left: 30px;
 }
 
-
-/* PHOTO GALLERY */
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.content-section li {
+margin-bottom: 8px;
 }
 
-.gallery figure {
-    margin: 0;
-}
-
-.gallery img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-figcaption {
-    padding: 8px;
-    text-align: center;
-}
-
-
-/* VIDEO */
-
-video {
-    width:400px
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-
-/* AUDIO */
-
-audio {
-    max-width: 100%;
-}
-
-
-/* TABLE */
+/* =========================================================
+8. LEARNING TABLE
+========================================================= */
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+background-color: white;
 }
 
 caption {
-    font-weight: bold;
-    padding: 10px;
+font-weight: bold;
+margin-bottom: 10px;
+color: #17365d;
 }
 
 th,
 td {
-    padding: 10px;
-    border: 1px solid #555;
-    text-align: left;
+padding: 12px;
+border: 1px solid #b8c7d9;
+text-align: left;
 }
 
 th {
-    font-weight: bold;
+background-color: #17365d;
+color: white;
 }
 
+tr:nth-child(even) {
+background-color: #f1f5f9;
+}
 
-/* FORM */
+/* =========================================================
+9. PROJECTS / SKILLS
+========================================================= */
+
+.project-card {
+margin: 20px 0;
+padding: 20px;
+border: 1px solid #cbd5e1;
+border-radius: 10px;
+background-color: #f8fafc;
+}
+
+.project-card h3 {
+margin-top: 0;
+}
+
+.project-card p {
+margin-bottom: 15px;
+}
+
+/* Show Details button */
+
+.detailsButton {
+padding: 9px 15px;
+border: none;
+border-radius: 5px;
+background-color: #2f75b5;
+color: white;
+cursor: pointer;
+}
+
+.detailsButton:hover {
+background-color: #1f4e79;
+}
+
+.detailsButton:focus {
+outline: 3px solid #ffd966;
+outline-offset: 2px;
+}
+
+/* Hidden project details */
+
+.project-details {
+display: none;
+margin-top: 15px;
+padding: 15px;
+border-left: 4px solid #2f75b5;
+background-color: #eaf2f8;
+}
+
+/* =========================================================
+10. PROJECT SEARCH
+========================================================= */
+
+.project-search {
+margin-top: 30px;
+padding: 20px;
+border: 1px solid #cbd5e1;
+border-radius: 10px;
+}
+
+.project-search label {
+display: block;
+margin-bottom: 8px;
+font-weight: bold;
+}
+
+#projectSearch {
+width: min(500px, 100%);
+padding: 11px;
+border: 1px solid #9aaabd;
+border-radius: 5px;
+}
+
+#projectSearch:focus {
+outline: 3px solid #ffd966;
+outline-offset: 2px;
+}
+
+#resetSearch {
+margin-top: 10px;
+padding: 10px 16px;
+border: none;
+border-radius: 5px;
+background-color: #17365d;
+color: white;
+cursor: pointer;
+}
+
+#resetSearch:hover {
+background-color: #2f75b5;
+}
+
+#searchMessage {
+font-weight: bold;
+}
+
+/* =========================================================
+11. IMAGE GALLERY
+========================================================= */
+
+.gallery {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+}
+
+.gallery figure {
+margin: 0;
+padding: 12px;
+background-color: #f8fafc;
+border: 1px solid #d9e2ec;
+border-radius: 10px;
+}
+
+.gallery img {
+width: 100%;
+height: 220px;
+object-fit: cover;
+display: block;
+border-radius: 7px;
+}
+
+.gallery figcaption {
+margin-top: 10px;
+text-align: center;
+}
+
+/* =========================================================
+12. INTERACTIVE GALLERY VIEWER
+========================================================= */
+
+.gallery-viewer {
+margin-bottom: 30px;
+text-align: center;
+padding: 20px;
+background-color: #f8fafc;
+border: 1px solid #d9e2ec;
+border-radius: 10px;
+}
+
+#galleryImage {
+width: min(700px, 100%);
+max-height: 450px;
+object-fit: cover;
+border-radius: 8px;
+}
+
+#galleryCaption {
+font-weight: bold;
+margin: 12px 0;
+}
+
+.gallery-buttons {
+display: flex;
+justify-content: center;
+gap: 10px;
+}
+
+.gallery-buttons button {
+padding: 10px 18px;
+border: none;
+border-radius: 5px;
+background-color: #2f75b5;
+color: white;
+cursor: pointer;
+}
+
+.gallery-buttons button:hover {
+background-color: #1f4e79;
+}
+
+.gallery-buttons button:focus {
+outline: 3px solid #ffd966;
+outline-offset: 2px;
+}
+
+/* =========================================================
+13. VIDEO AND AUDIO
+========================================================= */
+
+video {
+display: block;
+width: min(800px, 100%);
+max-width: 100%;
+height: auto;
+margin: 15px auto;
+border-radius: 8px;
+}
+
+audio {
+width: 100%;
+max-width: 600px;
+}
+
+/* =========================================================
+14. CONTACT FORM
+========================================================= */
 
 form {
-    max-width: 600px;
+max-width: 700px;
+margin: 20px auto;
 }
 
-label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
+form label {
+display: block;
+margin-top: 15px;
+margin-bottom: 6px;
+font-weight: bold;
 }
 
-input,
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+form input,
+form textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #9aaabd;
+border-radius: 6px;
+font-family: inherit;
+font-size: 1rem;
 }
 
-textarea {
-    height: 120px;
-    resize: vertical;
+form textarea {
+min-height: 150px;
+resize: vertical;
 }
 
-
-/* SUBMIT BUTTON */
-
-button {
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
+form input:focus,
+form textarea:focus {
+outline: 3px solid #ffd966;
+outline-offset: 2px;
 }
 
-button:hover {
-    opacity: 0.8;
+form button {
+margin-top: 20px;
+padding: 12px 20px;
+border: none;
+border-radius: 6px;
+background-color: #17365d;
+color: white;
+cursor: pointer;
+font-weight: bold;
 }
 
+form button:hover {
+background-color: #2f75b5;
+}
 
-/* FOOTER */
+form button:focus {
+outline: 3px solid #ffd966;
+outline-offset: 2px;
+}
+
+/* =========================================================
+15. FORM FEEDBACK AND PREVIEW
+========================================================= */
+
+.form-feedback {
+max-width: 700px;
+margin: 15px auto;
+padding: 12px;
+border-radius: 6px;
+font-weight: bold;
+}
+
+.form-preview {
+max-width: 700px;
+margin: 20px auto;
+padding: 20px;
+border: 1px solid #9aaabd;
+border-radius: 8px;
+background-color: #f8fafc;
+}
+
+/* =========================================================
+16. FOOTER
+========================================================= */
 
 footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
+margin-top: 40px;
+padding: 30px 20px;
+text-align: center;
+background-color: #17365d;
+color: white;
 }
 
+footer a {
+color: white;
+font-weight: bold;
+}
 
-/* MOBILE SCREEN */
+footer a:hover {
+color: #ffd966;
+}
 
-@media (max-width: 700px) {
+footer a:focus {
+outline: 3px solid #ffd966;
+outline-offset: 3px;
+}
+
+/* =========================================================
+17. DARK THEME
+========================================================= */
+
+body.dark-theme {
+background-color: #121212;
+color: #eeeeee;
+}
+
+body.dark-theme .intro-section,
+body.dark-theme .content-section {
+background-color: #1e1e1e;
+border-color: #444;
+}
+
+body.dark-theme .content-section h2 {
+color: #8ec5ff;
+}
+
+body.dark-theme .content-section h3 {
+color: #b9d9ff;
+}
+
+body.dark-theme .project-card,
+body.dark-theme .project-search,
+body.dark-theme .gallery-viewer,
+body.dark-theme .gallery figure,
+body.dark-theme .form-preview {
+background-color: #252525;
+border-color: #555;
+}
+
+body.dark-theme .project-details {
+background-color: #303030;
+}
+
+body.dark-theme table {
+background-color: #1e1e1e;
+}
+
+body.dark-theme th {
+background-color: #333;
+}
+
+body.dark-theme td {
+border-color: #555;
+}
+
+body.dark-theme tr:nth-child(even) {
+background-color: #292929;
+}
+
+/* =========================================================
+18. RESPONSIVE DESIGN
+========================================================= */
+
+/* Tablet and smaller screens */
+
+@media (max-width: 800px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+    }
+}
+
+/* Mobile phones */
+
+@media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+
+    header {
+        padding: 35px 15px;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
 
     main {
-        width: 95%;
+        width: 94%;
+    }
+
+    .content-section,
+    .intro-section {
+        padding: 20px 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        text-align: center;
     }
 
     .gallery {
         grid-template-columns: 1fr;
     }
 
-    nav a {
+    .gallery img {
+        height: auto;
+        max-height: 400px;
+    }
+
+    table {
         display: block;
-        margin: 8px;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 
-    .content-section {
-        padding: 15px;
+    .gallery-buttons {
+        flex-direction: column;
     }
 
+    .gallery-buttons button {
+        width: 100%;
+    }
+
+    #themeButton {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
+
+/* Very small phones */
+
+@media (max-width: 375px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .content-section,
+    .intro-section {
+        padding: 16px 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}
+
+.hidden {
+    display: none !important;
 }
